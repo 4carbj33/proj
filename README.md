@@ -86,6 +86,7 @@ The Controller layer is responsible for gathering data from the models and enabl
 >```
 
 ## Evaluation
+The creation of the To Do List application helped me understand the key concepts of creating an application: how the MVC architecture works together to handle data, present data, and enable operations for user interaction with data; the flexibility of MongoDB as a datastore; the functionality EJS provides in being a template that can be used for users to interact with data; NPM's ability to manage modules to aid in the functionality of the application (i.e. express, mongoose, body-parser etc), as well as the concept of a serverless infrastructure for deploying web applications.
 
 The intention of the application was to help users keep track of daily tasks. The way I envisioned this would work is a user will log in to the application, and will be able to create a collection of tasks assigned only to them according to their login ID. However, due to time constraints I faced, this was not made possible. The functionalities the application was able to achieve were: Creating and Deleting tasks, Viewing Outstanding Tasks, Registering as a New User, and User Authentication to an extent. 
 
