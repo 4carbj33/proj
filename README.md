@@ -1,7 +1,7 @@
 # To Do List App
 Link to hosted web application:
 
-Link to GitHub Repository:
+Link to GitHub Repository: https://github.com/4carbj33/proj.git
 
 ## Introduction
 The purpose of this application is to provide Wood Employees with the functionality to note down daily tasks and complete them during the day. At present, no "To Do List" tool is available, and users usually either keep a notepad or mentally note tasks. A survey conducted at the beginning of the project concluded that notepads are sometimes forgotten, causing users to use other means of note-taking, leading to inconsistency. The other method of mental note-taking (which accounted for 40% of employees' chosen note taking method) also resulted in human errors, where important information are sometimes forgotten. Therefore, a web tool accessible by anyone, at any time has been welcomed. The survey also reflected employee's request to keep the tool simple, therefore, the To Do List application has been limited to creating tasks and deleting them when they have been completed.
