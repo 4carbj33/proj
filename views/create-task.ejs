@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <title>Wood - ToDo List</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include('common/header'); -%>
+      <div class="container">
+        <h1 class="text-center">Create A New Task</h1>
+        <div class="row justify-content-md-center">
+          <div class="col-">
+            <form method="POST" action="/created-task">
+              <div class="form-group">
+                <label for="name">Task Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Task Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Task Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description"
+                  name="description"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Type of Task</label>
+                <select name="type" id="type">
+                    <option value="s3d"selected>S3D</option>
+                    <option value="spr">SPR</option>
+                    <option value="pw">ProjectWise</option>
+                    <option value="microstation">Microstation</option>
+                    <option value="autocad">AutoCAD</option>
+                    <option value="procedure">Procedure/Design Instruction</option>
+                    <option value="help">User Help</option>
+                    <option value="email">Answer Emails</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="name">Task Status</label>
+                <select name="status" id="status">
+                    <option value="pending"selected>Pending</option>
+                    <option value="inprogress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+              </div>
+              
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('common/footer') -%>
+  </body>
+</html>
